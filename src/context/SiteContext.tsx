@@ -30,9 +30,9 @@ interface SiteContextType {
 const SiteContext = createContext<SiteContextType | undefined>(undefined);
 
 const STORAGE_KEYS = {
-  COMPANY: 'allan_paysage_company_v1',
-  PROJECTS: 'allan_paysage_projects_v1',
-  REVIEWS: 'allan_paysage_reviews_v1',
+  COMPANY: 'allan_paysage_company_v2',
+  PROJECTS: 'allan_paysage_projects_v2',
+  REVIEWS: 'allan_paysage_reviews_v2',
 };
 
 export const SiteProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

@@ -3,6 +3,7 @@ import { useSite } from '../context/SiteContext';
 import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { Plus, MapPin, Calendar, Layers, X, Upload, Check, Trash2, ArrowRight } from 'lucide-react';
 import { ServiceId, ProjectItem } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const ProjectsView: React.FC = () => {
   const { projects, addProject, deleteProject, openQuoteModal, services } = useSite();
@@ -20,7 +21,7 @@ export const ProjectsView: React.FC = () => {
   const [newDuration, setNewDuration] = useState('2 semaines');
   const [newMaterials, setNewMaterials] = useState('');
   const [newBeforeImage, setNewBeforeImage] = useState<string>('');
-  const [newAfterImage, setNewAfterImage] = useState<string>('/src/assets/images/hero_drome_garden_1790943498607.jpg');
+  const [newAfterImage, setNewAfterImage] = useState<string>(IMAGES.heroGarden);
 
   // Filter logic
   const filteredProjects = projects.filter((p) => {

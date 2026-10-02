@@ -5,6 +5,7 @@ import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { TaxCreditBanner } from '../components/TaxCreditBanner';
 import { ServiceAreaMap } from '../components/ServiceAreaMap';
 import { ServiceId } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const HomeView: React.FC = () => {
   const { companyInfo, openQuoteModal, navigateToService, setCurrentTab, services, projects, reviews } = useSite();
@@ -17,7 +18,7 @@ export const HomeView: React.FC = () => {
       <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden rounded-b-3xl sm:rounded-b-[40px] bg-[#14261C]">
         {/* Hero Background image with measured scrim */}
         <img
-          src="/src/assets/images/hero_drome_garden_1790943498607.jpg"
+          src={IMAGES.heroGarden}
           alt="Jardin méditerranéen aménagé en Drôme Provençale à Allan"
           referrerPolicy="no-referrer"
           className="absolute inset-0 w-full h-full object-cover opacity-60 scale-105 transition-transform duration-1000"

@@ -1,4 +1,5 @@
 import { CompanyInfo, ProjectItem, ReviewItem, ServiceDetail } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const INITIAL_COMPANY_INFO: CompanyInfo = {
   name: "Atelier Allan Paysage",
@@ -27,7 +28,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Conception sur-mesure de jardins méditerranéens et contemporains adaptés au climat de la Drôme.',
     description: 'Transformez votre terrain en un espace de vie harmonieux : étude de sol, modélisation 3D, plantation de végétaux adaptés à la sécheresse (oliviers, cyprès, lavandes, graminées), engazonnement et rocailles.',
     longDescription: 'Nous concevons des jardins durables, esthétiques et économes en eau. En Drôme Provençale, les étés chauds et les épisodes de mistral nécessitent une sélection végétale rigoureuse. Nous marions pierres régionales et essences méditerranéennes pour créer des havres de paix qui prennent de la valeur au fil des saisons.',
-    image: '/src/assets/images/garden_creation_showcase_1790943515699.jpg',
+    image: IMAGES.gardenCreation,
     popular: true,
     features: [
       'Étude paysagère personnalisée et plan 2D/3D',
@@ -66,7 +67,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Tonte, taille de haies, débroussaillage et entretien annuel avec déduction fiscale immédiate.',
     description: 'Profitez d’un jardin impeccable toute l’année sans effort. Tonte de pelouse, taille soignée de haies et d’arbustes, désherbage manuel et évacuation des déchets verts. Éligible à 50% de crédit d’impôt.',
     longDescription: 'Dans le cadre du dispositif Services à la Personne (SAP), nos prestations d’entretien de jardin ouvrent droit à 50% de crédit d’impôt. Grâce à l’Avance Immédiate de l’URSSAF, vous ne payez que la moitié du montant de la facture au moment du règlement ! Nous proposons des interventions ponctuelles de remise en état ou des contrats annuels avec passages planifiés.',
-    image: '/src/assets/images/maintenance_lawn_hedge_1790943528016.jpg',
+    image: IMAGES.maintenanceLawn,
     taxCreditEligible: true,
     features: [
       'Avance immédiate de 50% du crédit d’impôt (vous ne payez que le reste à charge)',
@@ -105,7 +106,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Aménagement de terrasses en travertin, pierre naturelle, bois et allées carrossables.',
     description: 'Structurez vos extérieurs avec des matériaux nobles et durables : terrasses en travertin beige de Provence, dallage en calcaire, platelage bois exotique ou composite, allées en gravier stabilisé Alvéostar.',
     longDescription: 'La terrasse est le prolongement naturel de votre salon vers le jardin. Nous réalisons les fondations, la pose sur chape drainante ou plots réglables, ainsi que les allées de garage carrossables et cheminements piétons. Une étanchéité soignée et une pente d’écoulement garantie pour les orages de la vallée du Rhône.',
-    image: '/src/assets/images/terrace_stone_paving_1790943543199.jpg',
+    image: IMAGES.terraceStone,
     features: [
       'Pose de travertin Opus Romain et dalles grand format',
       'Terrasses en bois naturel (Ipé, Cumaru, Pin traité) ou bois composite',
@@ -143,7 +144,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Délimitez et valorisez votre propriété avec des murets en pierre et clôtures durables.',
     description: 'Pose de clôtures rigides avec lames d’occultation brise-vue, ganivelles bois, murets de soutènement en pierre calcaire du pays ou agglo enduit, et pose de portails battants ou coulissants.',
     longDescription: 'Pour préserver votre intimité face au voisinage ou sécuriser vos enfants et animaux, nous installons des clôtures robustes capables de résister aux assauts du mistral. Spécialistes des murets en pierre calcaire de la Drôme, nous recréons le charme authentique des restanques provençales.',
-    image: '/src/assets/images/fence_wall_project_1790943557451.jpg',
+    image: IMAGES.fenceWall,
     features: [
       'Panneaux grillagés rigides avec lamelles d’occultation PVC ou bois',
       'Murets en pierre sèche traditionnelle ou maçonnerie paysagère',
@@ -181,7 +182,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Systèmes d’arrosage goutte-à-goutte et tuyères programmables pour économiser jusqu’à 40% d’eau.',
     description: 'Installation et dépannage d’arrosage intégré enterré : réseau de micro-irrigation pour massifs et haies, tuyères escamotables pour gazon, programmateur connecté avec sonde d’humidité et pluie.',
     longDescription: 'Dans notre région sujette aux restrictions estivales d’eau en Drôme, un arrosage automatisé bien calibré permet de maintenir un jardin verdoyant tout en respectant la ressource. Nous calculons la pression et le débit pour créer des zones indépendantes et installer des programmateurs intelligents pilotables depuis votre smartphone.',
-    image: '/src/assets/images/watering_irrigation_system_1790943573374.jpg',
+    image: IMAGES.wateringSystem,
     features: [
       'Réseau goutte-à-goutte économique pour haies, oliviers et massifs',
       'Tuyères et turbines escamotables Rain Bird / Hunter pour pelouse',
@@ -219,7 +220,7 @@ export const SERVICES_LIST: ServiceDetail[] = [
     tagline: 'Taille raisonnée, abattage délicat et rognage de souches en toute sécurité.',
     description: 'Intervention sur arbres d’ornement et fruitiers : taille d’éclaircie, suppression des branches mortes, abattage par démontage en milieu contraint, broyage de branches et rognage de souche.',
     longDescription: 'Nos arboristes interviennent avec du matériel adapté pour sécuriser vos extérieurs avant les tempêtes ou redonner de la lumière à votre propriété. Nous privilégions une taille douce respectueuse de la physiologie de l’arbre (arbres remarquables, chênes, pins, platanes, oliviers centenaires).',
-    image: '/src/assets/images/pruning_tree_care_1790943587662.jpg',
+    image: IMAGES.pruningTree,
     features: [
       'Taille sanitaire, taille d’allègement et réduction de couronne',
       'Abattage par rétention et démontage au-dessus des toitures ou vérandas',
@@ -262,8 +263,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26780',
     year: '2025',
     description: 'Aménagement complet d’un terrain nu suite à la construction d’une villa moderne. Création d’allées en dalles de travertin, plantation d’un olivier centenaire de 120 ans, massifs de lavandes et santolines avec paillage en ardoise concassée.',
-    beforeImage: '/src/assets/images/garden_creation_showcase_1790943515699.jpg',
-    afterImage: '/src/assets/images/hero_drome_garden_1790943498607.jpg',
+    beforeImage: IMAGES.gardenCreation,
+    afterImage: IMAGES.heroGarden,
     duration: '3 semaines',
     materials: ['Olivier centenaire', 'Travertin beige', 'Paillage ardoise', 'Goutte-à-goutte connecté']
   },
@@ -276,8 +277,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26200',
     year: '2025',
     description: 'Rénovation d’une ancienne cour en terre battue en un espace lounge convivial. Pose de 80 m² de travertin Opus Romain, création d’un muret banquette en pierre sèche calcaire de la Drôme et intégration d’éclairages basse tension.',
-    beforeImage: '/src/assets/images/fence_wall_project_1790943557451.jpg',
-    afterImage: '/src/assets/images/terrace_stone_paving_1790943543199.jpg',
+    beforeImage: IMAGES.fenceWall,
+    afterImage: IMAGES.terraceStone,
     duration: '2 semaines',
     materials: ['Travertin Opus Romain', 'Pierre sèche calcaire', 'Éclairage LED encastré']
   },
@@ -290,8 +291,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26230',
     year: '2025',
     description: 'Taille sévère d’une haie de cyprès de Provence de 4 mètres de haut laissée à l’abandon, tonte et scarification d’une pelouse de 900 m², puis mise en place d’un contrat annuel avec déduction fiscale de 50% immédiate pour les propriétaires.',
-    beforeImage: '/src/assets/images/watering_irrigation_system_1790943573374.jpg',
-    afterImage: '/src/assets/images/maintenance_lawn_hedge_1790943528016.jpg',
+    beforeImage: IMAGES.wateringSystem,
+    afterImage: IMAGES.maintenanceLawn,
     duration: '3 jours de remise en état + suivi mensuel',
     materials: ['Taille de haie de cyprès', 'Scarification gazon', 'Avance Immédiate Urssaf']
   },
@@ -304,8 +305,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26130',
     year: '2025',
     description: 'Pose de 65 mètres linéaires de panneaux rigides soudés haute résistance avec lamelles d’occultation thermo-laquées gris anthracite (RAL 7016) et scellement renforcé pour résister aux rafales de vent de la vallée.',
-    beforeImage: '/src/assets/images/garden_creation_showcase_1790943515699.jpg',
-    afterImage: '/src/assets/images/fence_wall_project_1790943557451.jpg',
+    beforeImage: IMAGES.gardenCreation,
+    afterImage: IMAGES.fenceWall,
     duration: '4 jours',
     materials: ['Panneaux rigides 2m', 'Lamelles occultantes PVC', 'Massifs béton dosés à 350kg']
   },
@@ -318,8 +319,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26290',
     year: '2024',
     description: 'Création de 4 réseaux indépendants avec programmateur Wi-Fi commandé à distance. Réduction constatée de 38% sur la facture d’eau estivale de la propriété tout en doublant la vigueur des plantes.',
-    beforeImage: '/src/assets/images/hero_drome_garden_1790943498607.jpg',
-    afterImage: '/src/assets/images/watering_irrigation_system_1790943573374.jpg',
+    beforeImage: IMAGES.heroGarden,
+    afterImage: IMAGES.wateringSystem,
     duration: '3 jours',
     materials: ['Goutte-à-goutte autorégulant', 'Programmateur Wi-Fi', 'Sonde météo']
   },
@@ -332,8 +333,8 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     postalCode: '26780',
     year: '2024',
     description: 'Allègement de la charpente de trois grands pins surplombant une véranda. Suppression des branches maîtresses dangereuses par rétention avec cordage, broyage de 15 m³ de rémanents transformés en paillis pour le potager.',
-    beforeImage: '/src/assets/images/maintenance_lawn_hedge_1790943528016.jpg',
-    afterImage: '/src/assets/images/pruning_tree_care_1790943587662.jpg',
+    beforeImage: IMAGES.maintenanceLawn,
+    afterImage: IMAGES.pruningTree,
     duration: '2 jours',
     materials: ['Grimpeur-élagueur certifié', 'Broyage sur site', 'Sécurisation cordage']
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSite } from '../context/SiteContext';
 import { ShieldCheck, HeartHandshake, Leaf, Award, MapPin, CheckCircle2, Phone, ArrowRight } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 export const AboutView: React.FC = () => {
   const { companyInfo, openQuoteModal } = useSite();
@@ -25,7 +26,7 @@ export const AboutView: React.FC = () => {
         <div className="lg:col-span-6 relative">
           <div className="rounded-3xl overflow-hidden shadow-lg border border-stone-200">
             <img
-              src="/src/assets/images/team_craftsmen_portrait_1790943600170.jpg"
+              src={IMAGES.teamPortrait}
               alt="Artisans paysagistes d'Atelier Allan Paysage en Drôme"
               referrerPolicy="no-referrer"
               className="w-full h-auto object-cover"
