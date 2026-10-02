@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Allan Paysage - Montélimar & Drôme",
+  "description": "Paysagiste concepteur et entretien d'espaces verts à Allan (26780) et région de Montélimar. Création de jardins, terrasses, clôtures, arrosage automatique et 50% crédit d'impôt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
